@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang='pug'>
 #AwesomeEmbeddedSlideshow
   .eg-slideshow
     slide(enter='fadeIn' leave='fadeOut').slide-intro

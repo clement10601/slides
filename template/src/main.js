@@ -7,16 +7,20 @@ import Home from './Home'
 
 import Eagle from 'eagle.js'
 
-import slideshows from './slideshows/slideshows.js'
+import slideshows from './slideshows/slideshows'
+import 'eagle.js/dist/eagle.css'
+// import animate.css for slide transition 
+import 'animate.css'
 /* eslint-disable no-new */
 
 Vue.use(Eagle)
 Vue.use(Router)
 
 var routes = []
+console.log(slideshows.list)
 slideshows.list.forEach(function (slideshow) {
   routes.push({
-    path: '/' + slideshow.infos.path,
+    path: '/:slideshow',
     component: slideshow
   })
 })

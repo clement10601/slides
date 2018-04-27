@@ -1,5 +1,5 @@
 //- (:style="{ fontSize:  '20px' }")
-<template lang="pug">
+<template lang='pug'>
 #EagleRecipes.eg-theme-gourmet
   .eg-slideshow
     v-slide
@@ -30,7 +30,7 @@
       .subslide(v-if='step === 1')
         p The &lt;template&gt; tag provides the slideshow's structure:
         eg-code-block(lang='html').
-          &lt;template lang='pug'&gt;
+          &lt;template&gt;
           #MyFirstSlideshow
             .eg-slideshow
               slide

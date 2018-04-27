@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang='pug'>
 #IntroducingEagle.eg-theme-agrume
   .eg-slideshow
     slide(enter='fadeIn' leave='bounceOutLeft')

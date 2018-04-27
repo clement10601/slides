@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang='pug'>
 eg-transition(:enter='enter', :leave='leave')
   .eg-slide(v-if='active')
     .eg-slide-content

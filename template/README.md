@@ -1,16 +1,30 @@
-# Example slideshows for Eagle.js
+# template
 
-This folder/repo contains the source of a demo Eagle.JS webpage featuring a few slideshows. [Here is the page in action](https://zulko.github.io/eaglejs-demo/#/).
+> A Vue.js project
 
-To get started, download the zip of this repo or clone it with:
+## Build Setup
+
 ``` bash
-git clone https://github.com/Zulko/eaglejs-demo.git
-```
-
-Install the dependencies (they will only be downloaded in a local folder):
-```bash
-cd eaglejs-demo
+# install dependencies
 npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run e2e tests
+npm run e2e
+
+# run all tests
+npm test
 ```
 
-Then run ```npm run dev``` to start the server, and open your browser at [http://localhost:8080](http://localhost:8080) to see the slideshows.
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

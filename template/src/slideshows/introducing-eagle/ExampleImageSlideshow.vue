@@ -1,4 +1,4 @@
-<template lang="pug">
+<template lang='pug'>
 .eg-slideshow
   image-slide(v-for='imageUrl, i in images[preference]',
               :enter="(i === 0) ? null : 'slideInRight'", leave='slideOutLeft', :url='imageUrl')

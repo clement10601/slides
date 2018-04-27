@@ -22,8 +22,8 @@
 
 
     .thumbnails
-      .box-card(v-for='slideshow in slideshows')
-        router-link(:to='slideshow.infos.path' @click.native="click")
+      .box-card(v-for='slideshow in slideshows.list')
+        router-link(:to='slideshow' @click.native="click")
           .embedded-slideshow-container
             component(:is="slideshow", :embedded='true',
                       :keyboardNavigation='false',
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import slideshows from 'slideshows/slideshows'
+import slideshows from './slideshows/slideshows'
 
 export default {
   data: function () {
@@ -56,7 +56,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang='scss' scoped>
-@import "node_modules/eagle.js/src/themes/frontpage/frontpage";
+// @import "node_modules/eagle.js/src/themes/frontpage/frontpage";
 .logo {
   display: inline-block;
   width: 130px;
